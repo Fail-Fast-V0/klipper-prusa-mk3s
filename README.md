@@ -28,10 +28,20 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
    c. Next click the gear icon set the hostname, enable SSH, set a username and pass, put in your wifi credentials and select your country
    
    d. click "Save" and then you're ready to Write!
-4. This https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
-5. Update all components under Machine tab, otherwise config might not be able to load
-6. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/klipper_config/config```
-7. Add the following to the to `moonraker.conf` to enable automatic updates
+4. For Pi zero users, solder the headers onto the pi per [Prusa's official instructions](https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180) but do not plug it into the einsy board yet. 
+5. a. (optional step) If you do not want to use input shaping then you're done with the hardware setup and can move on to step 6 where we begin configuring Mainsail! 
+   
+   b. If you want to use input shaping then we'll solder on our header to this position [insert image of pi + pins here]
+   
+   c. [crimp wire instruction]
+6. Power off your printer and plug in your pi to the einsy board per [Prusa's official instructions](https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180)
+
+7. Power on your printer and navigate to "yourHostName".local/ 
+8. Navigate to the "Machine" tab and scroll down the "Update Manager" if you see a lot of red buttons that say "invalid" or "error" then give the board 5 minutes and then reboot the board using the power button in the top right of the Mainsail interface
+9. navigate back to the update manager and if the buttons are still red, then wait about 5 minutes. They will eventually populate. There will be a button at the bottom that says "Update All Components" Click this to update all packages to the latest. 
+10. Update all components under Machine tab, otherwise config might not be able to load
+11. {stopped here need to finish updating instructions}Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/klipper_config/config```
+12. Add the following to the to `moonraker.conf` to enable automatic updates
 
 ```yml
 [update_manager prusa]
