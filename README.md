@@ -1,5 +1,15 @@
+# UNREALEASED DO NOT USE YET
+
 # Kliper on Prusa MK3s
 Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://github.com/Rat-OS/RatOS-configuration
+
+## Hardware needed
+- raspberry pi 2/3/4 or Rpi zero (2w preferred)
+- adxl345 either fysetc [portable shaper](https://amzn.to/3CZuCLm) for pi 2/3/4 or
+-  standard [adxl345](https://amzn.to/3XMmTZa) 
+-  recommended using these headers [male] (https://www.digikey.com/en/products/detail/adam-tech/BHR-08-VUA/9832409) and [female] (https://www.digikey.com/en/products/detail/adam-tech/FCS-08-SG/9832361)
+-  if using pi zero you'll need [male headers](https://amzn.to/3XND883) to connect to einsy board
+-  
 
 ## Pre-Check
 
