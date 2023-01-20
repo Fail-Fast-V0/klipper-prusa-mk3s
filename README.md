@@ -4,7 +4,7 @@
 Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://github.com/Rat-OS/RatOS-configuration
 
 ## Hardware needed
-- raspberry pi 2/3/4 or Rpi zero (2w preferred)
+- the best option is to use a Rpi zero (2w preferred) but if you prefer raspberry pi 2/3/4 can also be used with a bit more work and a few more wires
 - adxl345 either fysetc [portable shaper](https://amzn.to/3CZuCLm) for pi 2/3/4 or
 -  standard [adxl345](https://amzn.to/3XMmTZa) 
 -  I recommend using these headers [male](https://www.digikey.com/en/products/detail/adam-tech/BHR-08-VUA/9832409) and [female](https://www.digikey.com/en/products/detail/adam-tech/FCS-08-SG/9832361) when using the standard ADXL345
@@ -19,11 +19,16 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 - Read https://www.klipper3d.org/Installation.html#building-and-flashing-the-micro-controller
 
 ## Install
-1. Install https://docs.mainsail.xyz/setup/mainsail-os to SDCard and RPI Zero 2 W
-2. Connect as described in https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
-3. Update all components under Machine tab, otherwise config might not be able to load
-4. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/klipper_config/config```
-5. Add the following to the to `moonraker.conf` to enable automatic updates
+1. Download [Pi Imager](https://downloads.raspberrypi.org/imager/imager_latest.exe), install it and open it
+2. 
+   a. Select "Choose OS" > "Other specific-purpose OS" > "3D Printing" > "Mainsail OS" > select the 32 bit version
+   b. Select "Choose Storage" > select the sd card that you want to flash
+   c. Next click the gear icon set the hostname, enable SSH, set a username and pass, put in your wifi credentials and select your country
+   d. click "Save" and then you're ready to Write!
+4. This https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
+5. Update all components under Machine tab, otherwise config might not be able to load
+6. Clone config ```git clone https://github.com/dz0ny/klipper-prusa-mk3s.git ~/klipper_config/config```
+7. Add the following to the to `moonraker.conf` to enable automatic updates
 
 ```yml
 [update_manager prusa]
