@@ -22,8 +22,11 @@ Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://g
 1. Download [Pi Imager](https://downloads.raspberrypi.org/imager/imager_latest.exe), install it and open it
 2. 
    a. Select "Choose OS" > "Other specific-purpose OS" > "3D Printing" > "Mainsail OS" > select the 32 bit version
+   
    b. Select "Choose Storage" > select the sd card that you want to flash
+   
    c. Next click the gear icon set the hostname, enable SSH, set a username and pass, put in your wifi credentials and select your country
+   
    d. click "Save" and then you're ready to Write!
 4. This https://help.prusa3d.com/en/article/raspberry-pi-zero-w-preparation-and-installation_2180
 5. Update all components under Machine tab, otherwise config might not be able to load
