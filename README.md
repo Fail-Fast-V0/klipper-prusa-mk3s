@@ -91,6 +91,12 @@ managed_services: klipper
 
 7. Print
 
+## FAQ
+Q. Can I reflash the Stock Prusa Firmware?
+A. yes, you can reflash the .hex through prusaslicer just like you normally would.
+
+Q. If I reflash Prusa Firmware onto the board do I lose the print hours and filament used statistics?
+A. No, those values are stored on memory that is not used by klipper.
 
 ## Nice things
 [Klipper mesh on print area only install guide](https://gist.github.com/ChipCE/95fdbd3c2f3a064397f9610f915f7d02)
