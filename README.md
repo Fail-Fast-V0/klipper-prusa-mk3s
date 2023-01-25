@@ -1,4 +1,4 @@
-# UNREALEASED DO NOT USE YET
+# UNTESTED - MAY NEED ADDITIONAL CONFIGURATION OR MODIFICATION - USE AT YOUR OWN RISK
 
 # Kliper on Prusa MK3s
 Structured Klipper config for Prusa MK3s/MK3s+ 3D printer, inspired by https://github.com/Rat-OS/RatOS-configuration
